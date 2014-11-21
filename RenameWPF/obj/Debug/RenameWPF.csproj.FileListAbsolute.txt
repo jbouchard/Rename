@@ -1,0 +1,13 @@
+C:\Stuff\Rename\RenameWPF\obj\Debug\App.g.cs
+C:\Stuff\Rename\RenameWPF\obj\Debug\RenameWPF_MarkupCompile.cache
+C:\Stuff\Rename\RenameWPF\bin\Debug\RenameWPF.exe.config
+C:\Stuff\Rename\RenameWPF\bin\Debug\RenameWPF.exe
+C:\Stuff\Rename\RenameWPF\bin\Debug\RenameWPF.pdb
+C:\Stuff\Rename\RenameWPF\obj\Debug\MainWindow.g.cs
+C:\Stuff\Rename\RenameWPF\obj\Debug\RenameWPF_MarkupCompile.lref
+C:\Stuff\Rename\RenameWPF\obj\Debug\MainWindow.baml
+C:\Stuff\Rename\RenameWPF\obj\Debug\RenameWPF.g.resources
+C:\Stuff\Rename\RenameWPF\obj\Debug\RenameWPF.Properties.Resources.resources
+C:\Stuff\Rename\RenameWPF\obj\Debug\RenameWPF.csproj.GenerateResource.Cache
+C:\Stuff\Rename\RenameWPF\obj\Debug\RenameWPF.exe
+C:\Stuff\Rename\RenameWPF\obj\Debug\RenameWPF.pdb

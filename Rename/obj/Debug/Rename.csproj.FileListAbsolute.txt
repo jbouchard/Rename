@@ -1,0 +1,9 @@
+C:\Stuff\Rename\Rename\bin\Debug\Rename.exe.config
+C:\Stuff\Rename\Rename\bin\Debug\Rename.exe
+C:\Stuff\Rename\Rename\bin\Debug\Rename.pdb
+C:\Stuff\Rename\Rename\obj\Debug\Rename.csprojResolveAssemblyReference.cache
+C:\Stuff\Rename\Rename\obj\Debug\Rename.frmRename.resources
+C:\Stuff\Rename\Rename\obj\Debug\Rename.Properties.Resources.resources
+C:\Stuff\Rename\Rename\obj\Debug\Rename.csproj.GenerateResource.Cache
+C:\Stuff\Rename\Rename\obj\Debug\Rename.exe
+C:\Stuff\Rename\Rename\obj\Debug\Rename.pdb

@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rename", "Rename\Rename.csproj", "{93DDCB5F-2A1F-400E-8440-BC325E22EFA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RenameWPF", "RenameWPF\RenameWPF.csproj", "{391289E4-A8B9-4098-94CF-5025607F4588}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApplication1", "WpfApplication1\WpfApplication1.csproj", "{92EBB87D-DBC0-44E2-AF55-A4A0E723DBD3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{93DDCB5F-2A1F-400E-8440-BC325E22EFA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93DDCB5F-2A1F-400E-8440-BC325E22EFA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93DDCB5F-2A1F-400E-8440-BC325E22EFA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93DDCB5F-2A1F-400E-8440-BC325E22EFA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{391289E4-A8B9-4098-94CF-5025607F4588}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{391289E4-A8B9-4098-94CF-5025607F4588}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{391289E4-A8B9-4098-94CF-5025607F4588}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{391289E4-A8B9-4098-94CF-5025607F4588}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92EBB87D-DBC0-44E2-AF55-A4A0E723DBD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92EBB87D-DBC0-44E2-AF55-A4A0E723DBD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92EBB87D-DBC0-44E2-AF55-A4A0E723DBD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92EBB87D-DBC0-44E2-AF55-A4A0E723DBD3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
