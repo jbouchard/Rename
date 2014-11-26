@@ -311,7 +311,7 @@ namespace WpfApplication1
             }
 
             //now show user the full selected path
-            MessageBox.Show(SelectedItemFullPath);
+            //MessageBox.Show(SelectedItemFullPath);
             try
             {
                 load_files(SelectedItemFullPath);
