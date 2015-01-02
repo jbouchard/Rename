@@ -39,6 +39,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -112,6 +113,15 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Rename.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Skins\ren_button.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Skins\ren_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Skins\ren_button_swirl.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

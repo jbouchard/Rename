@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.Collections.ObjectModel;
 
 using System.Linq;
@@ -33,6 +34,8 @@ namespace WpfApplication1
         //public event PropertyChangedEventHandler PropertyChanged;
 
         public App my_app;
+
+        private RenameFiles Rename_Files = new RenameFiles();
         private ObservableCollection<gvItem> _files = new ObservableCollection<gvItem>();
         //public static readonly DependencyProperty FontWeight = DependencyProperty.Register("FontWeight", typeof(string), typeof(MainWindow), new PropertyMetadata("Bold"));
         public Style dgColStyle = new Style();
@@ -106,8 +109,8 @@ namespace WpfApplication1
 
         //}
 
-        public double WidthAdjustment { get { return 100; } set { } }
-        public double HeightAdjustment { get { return 100; } set { } }
+        public double WidthAdjustment { get { return 50; } set { } }
+        public double HeightAdjustment { get { return 50; } set { } }
 
         public double WindowLeft
         {
@@ -385,9 +388,10 @@ namespace WpfApplication1
 
         public void load_files(string dir)
         {
-
+            //ObservableCollection<t> test;
             dgFiles.DataContext = null;
             _files.Clear();
+            Rename_Files.Clear();
             //dgFiles.Items.Clear();
             dgFiles.Items.Refresh();
             //load_Columns();
@@ -405,12 +409,12 @@ namespace WpfApplication1
                 cfile.fname = f.Name.ToString();
                 cfile.ext = f.Extension.ToString();
                 cfile.lastmodified = f.LastWriteTime;
-                cfile.newfname = f.Name.ToString();
+                cfile.newfname = System.IO.Path.GetFileNameWithoutExtension( f.Name).ToString();
                 cfile.newext = f.Extension.ToString();
                 cfile.resfname = cfile.newfname + "." + cfile.newext;
                 _files.Add(cfile);
                 //.Add(cfile);
-
+                Rename_Files.add(new Rename_File(cfile.fname, cfile.ext, cfile.lastmodified, System.IO.Path.GetFileNameWithoutExtension(f.Name).ToString(), cfile.ext, cfile.fname));
                 //dgFiles.Items.Add(new DataGridRow());
                 //fclass = new FileInfo();
                 //fclass.Name = f.Name;
@@ -423,10 +427,51 @@ namespace WpfApplication1
 
             //dgFiles.ItemsSource = files;
             //dgFiles.DataContext = _files;
-            dgFiles.DataContext = _files;
+            //dgFiles.DataContext = _files;
+            dgFiles.DataContext = Rename_Files;
 
 
         }
 
+        //public virtual ObservableCollection<gvItem> Current_Files
+        //{
+        //    set { }
+        //    get { }
+
+
+        //}
+
+    }
+
+    public class RenameFiles : ObservableCollection<Rename_File> 
+    {
+    
+        public void add(Rename_File nfile)
+
+        { Add(nfile); }
+    }
+
+    public class Rename_File
+    { 
+        public Rename_File(string infname, string inext, DateTime inlastmodified, string innewfname, string innewext, string inresfname)
+        {
+            this.fname = infname;
+            ext = inext;
+            lastmodified = inlastmodified;
+            newfname = innewfname;
+            newext = innewext;
+            resfname = inresfname;
+        }
+            public string fname { set; get; }
+            public string ext { set; get; }
+            public DateTime lastmodified { set; get; }
+            public string newfname { set; get; }
+            public string newext { set; get; }
+            public string resfname { set; get; }
+
+    }
+
+    public abstract class MotvCodesDatagridBase<t> 
+    {
     }
 }

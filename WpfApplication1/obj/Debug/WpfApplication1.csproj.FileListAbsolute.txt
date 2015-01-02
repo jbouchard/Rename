@@ -14,4 +14,3 @@ C:\Stuff\Rename\WpfApplication1\obj\Debug\WpfApplication1.Properties.Resources.r
 C:\Stuff\Rename\WpfApplication1\obj\Debug\WpfApplication1.csproj.GenerateResource.Cache
 C:\Stuff\Rename\WpfApplication1\obj\Debug\WpfApplication1.exe
 C:\Stuff\Rename\WpfApplication1\obj\Debug\WpfApplication1.pdb
-C:\Stuff\Rename\WpfApplication1\obj\Debug\WpfApplication1.csprojResolveAssemblyReference.cache

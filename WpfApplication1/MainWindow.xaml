@@ -35,7 +35,9 @@
         </ResourceDictionary>
     </Window.Resources>
 
-    <Border CornerRadius="20,20,20,20" Background="{StaticResource GridBorderBrush}">
+    <!--<Border CornerRadius="20,20,20,20" Background="{StaticResource GridBorderBrush}">-->
+    <Border CornerRadius="20,20,20,20" Background="SlateGray">
+
         <Grid>
             <y:Grid.ColumnDefinitions>
                 <y:ColumnDefinition Width="325*"/>
@@ -181,48 +183,56 @@
                 Height="129" 
                 y:Grid.Row="2" 
                 VerticalAlignment="Top" 
-                Width="164" 
+                Width="150" 
                 Style="{DynamicResource RoundedButton}" 
-                Margin="260,19,0,0" FontSize="18" FontWeight="Bold" y:Grid.ColumnSpan="2" y:Grid.RowSpan="2"/>
+                Margin="20,25,0,0" FontSize="18" FontWeight="Bold"/>
 
             <y:Button 
                 Background="Transparent" 
                 Content="Button" 
                 HorizontalAlignment="Left" 
                 Height="129" 
-                y:Grid.Row="1" 
+                y:Grid.Row="2" 
                 VerticalAlignment="Top" 
-                Width="164" 
+                Width="150" 
                 Style="{DynamicResource RoundedBlueButton}" 
-                Margin="101,63,0,0" FontSize="18" FontWeight="Bold"/>
+                Margin="343,25,0,0" FontSize="18" FontWeight="Bold" y:Grid.ColumnSpan="2"/>
 
             <y:Button 
                 Background="Transparent" 
                 Content="Button" 
                 HorizontalAlignment="Left" 
                 Height="129" 
-                y:Grid.Row="1" 
+                y:Grid.Row="2" 
                 VerticalAlignment="Top" 
-                Width="164" 
+                Width="150" 
                 Style="{DynamicResource DoubleRoundedGreenButton}" 
-                Margin="101,203,0,0" FontSize="18" FontWeight="Bold"/>
+                Margin="126,25,0,0" FontSize="18" FontWeight="Bold" y:Grid.Column="1"/>
 
             <y:Button 
                 Background="Transparent" 
                 Content="Button" 
                 HorizontalAlignment="Left" 
                 Height="129" 
-                y:Grid.Row="1" 
+                y:Grid.Row="2" 
                 VerticalAlignment="Top" 
-                Width="225" 
+                Width="150" 
                 Style="{DynamicResource RoundedRedButton}" 
-                Margin="133,180,0,0" FontSize="18" FontWeight="Bold" y:Grid.Column="1"/>
+                Margin="281,25,0,0" FontSize="18" FontWeight="Bold" y:Grid.Column="1"/>
 
-            <y:Button Content="Button" y:Grid.Column="1" HorizontalAlignment="Right" Height="69" Margin="0,0,10,0" y:Grid.Row="2" VerticalAlignment="Top" Width="164" Style="{DynamicResource FancyButton}"/>
+            <y:Button Content="Button" y:Grid.Column="1" HorizontalAlignment="Right" Height="69" Margin="0,363,83,0" y:Grid.Row="1" VerticalAlignment="Top" Width="164" Style="{DynamicResource FancyButton}"/>
 
-            <y:Button Content="Button" y:Grid.Column="0" HorizontalAlignment="Left" Height="69" Margin="10,0,0,0" y:Grid.Row="2" VerticalAlignment="Top" Width="164" Style="{DynamicResource JButton}"/>
+            <y:Button Content="Button" y:Grid.Column="0" HorizontalAlignment="Left" Height="69" Margin="10,363,0,0" y:Grid.Row="1" VerticalAlignment="Top" Width="164" Style="{DynamicResource JButton}"/>
 
             <Image y:Grid.Row="2" Source="{StaticResource Renameico}" Visibility="Visible" Panel.ZIndex="99" HorizontalAlignment="Left" Margin="20,128,0,19" Width="26" VerticalAlignment="Bottom" Height="26" y:Grid.RowSpan="2"/>
+            <y:Button HorizontalAlignment="Left" Height="129" Margin="188,25,0,0" y:Grid.Row="2" VerticalAlignment="Top" Width="150" Style="{DynamicResource RoundedImgButton}">
+                <Button.Background>
+                    <ImageBrush ImageSource="{StaticResource ren_button}" />
+                </Button.Background>
+
+            </y:Button>
+
+
 
         </Grid>
 
